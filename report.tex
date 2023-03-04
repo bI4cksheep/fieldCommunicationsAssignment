@@ -7,13 +7,18 @@
 \include{document_setup}
 
 \begin{document}
+    % document wide setting
+    \pagenumbering{gobble}
+    % Generic Title Page
+    \include{title_page_generic}
 
-    % % Generic Title Page
-    % \include{title_page_generic}
-
+    % single spacing for the main parts
+    \begin{singlespace}
+        \include{thema1}
+    \end{singlespace}
     % % Table of Contents
     % \tableofcontents
-    % \pagenumbering{Roman}
+    
     % \thispagestyle{fancy}
     % \setcounter{page}{1}
     % \cleardoublepage
@@ -24,8 +29,6 @@
     % % sections and content go here...
     % \input{shortProposal.tex}
     % \cleardoublepage
-    Das ist ein Latex Basic Document.
-
     
 
 \end{document}
