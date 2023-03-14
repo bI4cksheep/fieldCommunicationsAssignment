@@ -1,17 +1,22 @@
-\section{Vorteile der Gleichanteilsfreiheit bei der binären Kodierung}
-Die binäre Kodierung ist eine Abbildungsvorschrift, welche Nullen und Einsen verwendet,
-um Informationen darzustellen. Jedes Wort dieser Sprache kann über dem Alphabet {0,1} gebildet werden.
+\section{Vorteile der Gleichanteilsfreiheit bei der binären Codierung}
+Die binäre Kodierung ist eine Abbildungsvorschrift, welche Nullen und Einsen verwendet
+um Informationen darzustellen. Jedes Wort dieser Sprache kann über dem Alphabet \{0,1\} gebildet werden.
 Sie ist besonders in der Digitaltechnik relevant, da die zwei möglichen Zeichen durch
-einen High- und Low-Zustand abgebildet werden können, sodass komplizierte Messschaltungen entfallen. \autocite{Fricke2003}
+einen High- und Low-Zustand (z.B. Spannung an, Spannung aus) abgebildet werden können, sodass komplizierte Messschaltungen entfallen.\autocite[379]{Fricke2003}
 Jede Art von digitalen Daten (Fotos, Videos, Dokumente, etc.) lässt sich mithilfe dieser Kodierung
-darstellen, speichern und übertragen.
-Bei der digitalen, binären Informationsübertragung, z.B. über einen Datenbus, muss die binäre Kodierung erneut
-codiert werden, beispielweise indem der Null und der Eins jeweils eine bestimmte Amplitude eines 
-Signals zugewiesen wird. \\
+darstellen, speichern und übertragen. Um beispielsweise Text darzustellen, können Buchstaben und Satzzeichen
+durch den 7-Bit ASCII Code dargestellt werden.
+Sollen diese Binärdaten nun digital übertragen werden, z.B. über einen Datenbus, müssen die Einsen und Nullen
+der binären Codierung erneut codiert werden. Hierfür eignet es sich unter Anderem, der Eins und der Null
+verschiedene Amplituden eines Signals zuzuweisen.\\
 Es sind verschiedene digitale Codierungsarten möglich, von denen sich jedoch nicht jede für jeden Einsatzzweck eignet.
-Oft bedeutet die Übertragung von digital codierten Signalen, dass zusätzlich zu den Leitungen der Energieversorgung auch 
-Datenleitungen verlegt werden müssen, wodurch der Verkabelungsaufwand ansteigt. Eine alternative Möglichkeit bietet sich 
-in der Signalübertragung über die Stromleitungen selbst. Dies ist möglich, wenn die Komponenten mit Gleichspannung versorgt werden.
-Voraussetzung für diese Art der Datenübertragung ist, dass die Signale gleichanteilsfrei sind.
+Manche Codierungen bieten die Möglichkeit, Daten synchron zu übertragen, andere wiederum übertragen die Daten asynchron.
+Oft bedeutet die Übertragung von digital codierten Signalen aber auch, dass zusätzlich zu den Leitungen der Energieversorgung auch 
+Datenleitungen verlegt werden müssen, sodass der Verkabelungsaufwand ansteigt. Eine alternative Möglichkeit bietet sich 
+in der Verwendung einer Codierung, welche die Signalübertragung über die Stromleitungen selbst ermöglicht.
+Für diese Art der Signalübertragung gilt es, zwei Voraussetzungen zu erfüllen. Zunächst muss die Energieversorgung der
+Komponenten mittels Gleichspannung erfolgen. Außerdem wird die Anforderung der Gleichanteilsfreiheit an die übertragenen
+Signale gestellt. \autocite[55]{Schnell2019}
 Unter dem Gleichanteil eines Signals versteht man den Langzeitmittelwert dieses Signals. Ist ein Signal gleichanteilsfrei, dann
-weißt es einen Gleichanteil von 0 auf.
+weißt es einen Gleichanteil von 0 auf, weicht also im Mittel werde positiv noch negativ ab. \\
+
